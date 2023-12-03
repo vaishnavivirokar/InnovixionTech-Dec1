@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vaishnavirokar Personal Portfolio Website</title>
+    <meta name="title" content="Vaishnavi Virokar- Personal Portfolio Website" />
+    <meta name="description" content="Welcome to my portfolio website which showcases my skills,
+     projects, internships, education, blogs and contact details as a web developer.
+      Feel free to explore and get to know me better." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/vaishnavivirokar/Portfolio" />
+    <meta property="og:title" content="Vaishnavi Virokar - Personal Portfolio Website" />
+    <meta property="og:description" content="Welcome to my portfolio website which showcases my skills,
+     projects, internships, education, blogs and contact details as a web developer.
+      Feel free to explore and get to know me better." />
+    <meta property="twitter:title" content="Vaishnavi Virokar - Personal Portfolio Website" />
+    <meta property="twitter:description" content="Welcome to my portfolio website which showcases
+     my skills, projects, internships, education, blogs and contact details as a web developer.
+      Feel free to explore and get to know me better." />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f977b4b2d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <a href ="#header"><img src="logo design.png" class="logo"></a>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!-- <li><a href="#blogs">Blogs</a></li> -->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1><font color ="white" class ="color1">I am </font><br><span>Vaishnavi Virokar</span></h1><br>
+            <p >Software Programmer<br>& <span class="multi">Web Developer</span> </p>
+        </div>
+        <a href="word2023-1.pdf" download class="btn btn2">Download CV</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js" ></script>
+    <script>
+          var Typed = new Typed(".multi",{
+    strings: ["Logo Designer","Coder!","Art Designer.."],
+    loop:true,
+    typeSpeed: 150,
+    backSpeed:150,
+    // backDelay:1500
+  })
+    </script>
+</div>
+
+<hr>
+<!--------------About------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1><br>
+                <p>Hello my name is Vaishnavi Virokar. I am a software programmer and a web developer.
+                    I was born in Shegaon. Currently, I'm persuing my BCA from
+                    Saraswati College,Shegaon. For more details, you can download
+                    my <b>resume</b>.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                        <p class="tab-links" onclick="opentab('achievement')">Achievement</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul> 
+                            <li><span>Programming</span><br>C, C++, CoreJava</li>
+                            <li><span>Web Development</span><br>HTML5, CSS3, JavaScript</li>
+                            <li><span>Database</span><br>SQL</li>
+                            <li><span>Designing Tools</span><br>Canva, Figma</li>
+                         
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2024</span><br>BCA from Saraswati College, Shegaon</li>
+                            <li><span>2020</span><br>12th S.D.M.Burungle College, Shegaon</li>
+                            <li><span>2018</span><br>10th from Shri Sant Gajanan Maharaj English School, Shegaon</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internships">
+                        <ul>
+                            <li><span>Aug 2023 - Sep 2023</span><br>
+                                <b>TechnoHacks EduTech Official</b><br>Web Development Internship</li><br>
+                            <li><span>Feb 2023 -  April2023</span><br>
+                                <b>Makryto Innovation Private Limited</b><br>Web Development Internship<br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievement">
+                        <ul>
+                            <li><span>Oct 2023</span><br>
+                                <b> Won Second Price </b><br> Web Design & Development Compitition of IT Ignite 2023 Program at Swaraswati
+                                    College,
+                                    </li><br>
+                            
+                        </ul>
+                    </div>
+            </div>
+            <div class="about-col-1">
+                <img src="WhatsApp I.jpeg" alt="Avatar" class="myimage">
+                <div class="overlay1">
+                  <div class="text">~ Vaishnavi Virokar</div>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
+<!---------------------Blogs------------------->
+<!-- <div id="blogs">
+    <div class="container">
+        <h1 class="sub-title">My Blogs</h1>
+        <div class="blogs-list">
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>Blog 1</h2>
+                <p>Artificial Intelligence: Pros and Cons</p>
+                <a href="blog1.html"><u>Read full blog</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>Blog 2</h2>
+                <p>Importance of exercise in day to day life</p>
+                <a href="blog2.html"><u>Read full blog</u></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-blog"></i>
+                <h2>Blog 3</h2>
+                <p>Coming Soon...</p>
+                <a href="#"><u></u></a>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!---------------Portfolio--------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="cal.png">
+                <div class="layer">
+                    <h3>Simple Animated Calculator</h3>
+                    <p><b><font color ="white" size ="3">This is a Animated Calculator 
+                        <br><br>Technology used- HTML, CSS, JavaScript</font></b></p>
+                    <a href="https://github.com/vaishnavivirokar/calculator-">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="login.png">
+                <div class="layer">
+                    <h3>Login & Registration Form</h3>
+                    <p><b><font color ="white" size ="3">Login & Registration Form Link Connecting
+                        <br><br>Technology used- HTML, CSS, JavaScript</font></b></p>
+                    <a href="https://github.com/vaishnavivirokar/registration-nd-login-page-connecting">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="logo.png">
+                <div class="layer">
+                    <h3>Protfolio Website</h3>
+                    <p><b><font color ="white" size ="3">Portfolio Resume Website
+                        <br><br>Technology used-HTML, CSS, JavaScript  </font></b></p>
+                    <a href="https://github.com/vaishnavivirokar/Portfolio">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+            <div class="work">
+                <img src="Untitled design (1).png">
+                <div class="layer">
+                    <h3>Blue Heaven Website</h3>
+                    <p><b><font color ="white" size ="3">This is the Product Landing Website
+                        <br><br>Technology used- HTML, CSS, JavaScript</font></b></p>
+                    <a href="https://github.com/vaishnavivirokar/product-landing-page">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="music.png">
+                <div class="layer">
+                    <h3>Music Player</h3>
+                    <p><b><font color ="white" size ="3">Music Player
+                        <br><br>Technology used- HTML, CSS,</font></b></p>
+                    <a href="https://github.com/vaishnavivirokar/music-player">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Untitled design.png">
+                <div class="layer">
+                    <h3>Project 6</h3>
+                    <p><b><font color ="white" size ="3">Coming Soon...
+                        <br><br>Technology used- </font></b></p>
+                    <a href="#">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!------------------Contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1><br>
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+            <div class="vl"></div>
+            <div class="contact-right">
+                <p><i class="fa-solid fa-envelope"></i><b> &nbsp;&nbsp; vaishnavisvirokar075@gmail.com</b></p>
+                <p><i class="fa-solid fa-phone"></i><b> &nbsp;&nbsp; (+91) 8999723316</b></p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vaishnavi-virokar07">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/vaishnavivirokar">
+                        <i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.youtube.com/@memyself.navi07">
+                        <i class="fa-brands fa-youtube"></i></a>
+                    <a href=""></a>
+                    <a href=""></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> 2023 vaishnavirokar &hearts;</p>
+    </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
